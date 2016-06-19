@@ -10,7 +10,7 @@
     <script src="../js/bootstrap.js"></script>
 </head>
 <body>
-
+    <!--The tamplate images (I only prepare 10 images from number 0 to 9)-->
     <div class="container" id="TMImages">
         <div class="row imgOne">
             <img width="150" height="150" src="../imgs/Characters/0.png" class="col-lg-2" />
@@ -30,15 +30,13 @@
         </div>
 
     </div>
-
+    <!--end template images-->
+    <!--DrawArea: Draw the number section-->
     <div class="container">
-        <!--DrawArea:Draw the number section-->
         <div class="col-lg-4">
-
             <div class="panel panel-success">
                 <div class="panel-heading">Write number here</div>
                 <div class="panel-body">
-
                     <div id="canvas">
                         <canvas id="theCanvas" width="300" height="300"></canvas>
                     </div>
@@ -53,16 +51,15 @@
             <div class="panel panel-info">
                 <div class="panel-heading">Result</div>
                 <div class="panel-body">
-
                     <div>
                         <canvas id="resultCanvas" width="500" height="300"></canvas>
                     </div>
                 </div>
             </div>
-
         </div>
         <!--End ShowResult-->
     </div>
+
     <!--Modal Area-->
     <div id="myModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -81,7 +78,7 @@
                             <span class="glyphicon glyphicon-arrow-right"></span>
                         </div>
                         <div class="col-lg-3">
-                            <img id="TMimage" width="150" height="150" src="http://i1268.photobucket.com/albums/jj561/JohnathanWang/0_zps4zl2fpcl.png" />
+                            <img id="TMimage" width="150" height="150" src="../imgs/Characters/0.png" />
                         </div>
                         <div class="col-lg-2">
                             <h3>The Similarity:</h3>
@@ -106,7 +103,8 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
     <!--End Modal Area-->
-    <img id="myImage" />
+  
     <script src="../js/myApp.js"></script>
 </body>
 </html>
+
