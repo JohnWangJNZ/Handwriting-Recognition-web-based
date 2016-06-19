@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HandWrite Character Recognition</title>
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../scripts/jquery-1.9.1.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="container" id="TMImages">
+        <div class="row imgOne">
+            <img width="150" height="150" src="../imgs/Characters/0.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/1.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/2.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/3.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/4.png" class="col-lg-2" />
+
+        </div>
+        <br />
+        <div class="row imgTwo">
+            <img width="150" height="150" src="../imgs/Characters/5.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/6.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/7.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/8.png" class="col-lg-2" />
+            <img width="150" height="150" src="../imgs/Characters/9.png" class="col-lg-2" />
+        </div>
+
+    </div>
+
+    <div class="container">
+        <!--DrawArea:Draw the number section-->
+        <div class="col-lg-4">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">Write number here</div>
+                <div class="panel-body">
+
+                    <div id="canvas">
+                        <canvas id="theCanvas" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-info" id="reset">Reset</button>
+            <button class="btn btn-primary" id="btn_create" data-toggle="modal" data-target="#myModal">Show the process</button>
+        </div>
+        <!--End of DrawArea-->
+        <!--ShowResult:Show the result section-->
+        <div class="col-lg-6" id="result">
+            <div class="panel panel-info">
+                <div class="panel-heading">Result</div>
+                <div class="panel-body">
+
+                    <div>
+                        <canvas id="resultCanvas" width="500" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--End ShowResult-->
+    </div>
+    <!--Modal Area-->
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="gridSystemModalLabel">Template Matching Process:</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div id="drawImg" class="col-lg-3">
+
+                        </div>
+                        <div class="col-lg-1">
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </div>
+                        <div class="col-lg-3">
+                            <img id="TMimage" width="150" height="150" src="http://i1268.photobucket.com/albums/jj561/JohnathanWang/0_zps4zl2fpcl.png" />
+                        </div>
+                        <div class="col-lg-2">
+                            <h3>The Similarity:</h3>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="row">
+                        <div class="progress">
+                            <div id="myProgress" class="progress-bar progress-bar-success progress-bar-striped active" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!--End Modal Area-->
+    <img id="myImage" />
+    <script src="../js/myApp.js"></script>
+</body>
+</html>
