@@ -1,5 +1,5 @@
 # myApp
-
+<a href="http://s1268.photobucket.com/user/JohnathanWang/media/app_zpsxa8akati.jpg.html" target="_blank"><img src="http://i1268.photobucket.com/albums/jj561/JohnathanWang/app_zpsxa8akati.jpg" border="0" alt=" photo app_zpsxa8akati.jpg"/></a>
 Using Html, css, js creates a simple handwriting recognition web app.
 The purpose of this app is to show the procedure of basic character recognition based on Template Matching.
 
